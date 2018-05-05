@@ -10,7 +10,7 @@ function replace(value, original, replacement) {
 }
 
 function getReplacements(state) {
-  if (state.opts instanceof Array) {
+  if (state.opts.replacements && state.opts.replacements instanceof Array) {
     return state.opts;
   }
   return [state.opts];
